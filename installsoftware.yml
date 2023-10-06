@@ -1,0 +1,15 @@
+---
+- name: Install Software
+  hosts: all
+  become: true
+   
+  tasks:
+
+    - name: Install the latest version of Task 1 Software
+      ansible.builtin.dnf:
+        name: 
+         - htt
+         - mariadb-server
+         - firefox
+         - git
+        state: latest
