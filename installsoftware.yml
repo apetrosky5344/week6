@@ -8,7 +8,7 @@
     - name: Install the latest version of Task 1 Software
       ansible.builtin.dnf:
         name: 
-         - htt
+         - httpd
          - mariadb-server
          - firefox
          - git
